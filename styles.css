@@ -1,0 +1,246 @@
+/* CONFIGURACIÓN GENERAL */
+body{
+    padding-top: 110px;
+    font-family:"Poppins", sans-serif;
+    background:#f7f7f7;
+    color:#333;
+    margin: 0;
+}
+
+/* NAVBAR */
+.header {
+    background: rgb(243, 114, 114);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.header .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #d4a000;
+}
+
+/* HERO */
+.hero {
+    background-image: url("Imagen/fondo-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.55);
+    padding:30px;
+    border-radius:12px;
+    color:white;
+    max-width: 90%;
+}
+
+/* ===== TEXTO FUCSIA + ANIMACIÓN ===== */
+.fucsia{
+    color:#e6007e;
+    text-shadow:2px 2px 6px rgba(0,0,0,0.4);
+    animation: aparecer 1.5s ease-in-out;
+}
+
+.hero-content h1.fucsia{
+    font-size:48px;
+    letter-spacing:2px;
+}
+
+.hero-content p.fucsia{
+    font-size:20px;
+    font-style: italic;
+    margin-top:10px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* SECCIONES */
+section{
+    padding:60px 50px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:25px;
+    color:#c237d4;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* MENÚ */
+.dia{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+.dia h3{
+    margin:0 0 12px;
+    color:#333;
+    font-size:26px;
+    border-bottom:2px solid #d4af37;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.categoria h4{
+    margin:5px 0;
+    color:#d4af37;
+}
+
+/* SOBRE NOSOTROS */
+.texto{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* HORARIOS + UBICACIÓN */
+.horarios, .ubicacion{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+    margin-top:40px;
+}
+
+footer p{
+    opacity:.8;
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+    .header .container{
+        padding: 10px 20px;
+    }
+
+    .nav ul{
+        gap: 12px;
+    }
+
+    .hero{
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    .hero-content h1.fucsia{
+        font-size:32px;
+    }
+
+    section{
+        padding:40px 20px;
+    }
+
+    .dia{
+        text-align:center;
+    }
+}
+
+/* ===== MI CUENTA - PEDIR ===== */
+#mi-cuenta {
+    background: rgb(230, 63, 63);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    text-align: center;
+}
+
+#mi-cuenta .precio-menu {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#mi-cuenta input {
+    width: 70px;
+    padding: 6px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#mi-cuenta .total {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+#mi-cuenta button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#mi-cuenta button:hover {
+    background-color: #1ebe5d;
+}

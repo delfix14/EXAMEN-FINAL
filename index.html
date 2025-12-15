@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante El Dorado</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="Imagen/logo.png" alt="Logo del restaurante">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1 class="fucsia">Restaurante El Dorado</h1>
+        <p class="fucsia">“Un legado servido con el toque de mamá.”</p>
+    </div>
+</section>
+
+<!-- MENÚ SEMANAL -->
+<section id="menu">
+    <h2 class="titulo-menu">Lo mejor del menú semanal</h2>
+    <div id="menu-semanal"></div>
+</section>
+
+<!-- MI CUENTA - PEDIR -->
+<section id="mi-cuenta">
+    <h2>Mi cuenta - Pedir</h2>
+
+    <p class="precio-menu">
+        Menú del día: <strong>S/ 10.00</strong>
+    </p>
+
+    <div class="pedido-box">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" value="1" min="1">
+
+        <p class="total">
+            Total: <strong>S/ <span id="total">10</span>.00</strong>
+        </p>
+
+        <button onclick="enviarPedido()">Pedir por WhatsApp</button>
+    </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p class="texto">
+        En Restaurante El Dorado ofrecemos comida tradicional de la región Cusco,
+        preparada con dedicación y el auténtico toque de mamá.
+        Nuestro compromiso es brindar un servicio cálido, platos frescos y el mejor sabor casero.
+    </p>
+</section>
+
+<!-- HORARIOS -->
+<section id="horarios">
+    <h2>Horarios</h2>
+
+    <div class="horarios">
+        <p class="fucsia"><strong>Lunes a Viernes:</strong> Almuerzo y Cena</p>
+        <p><strong>Sábado y Domingo:</strong> Cerrado</p>
+    </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+
+    <div class="ubicacion">
+        <p><strong>Departamento:</strong> Cusco</p>
+        <p><strong>Provincia:</strong> Espinar</p>
+        <p><strong>Dirección:</strong> Calle Colón N° 213</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3 class="fucsia">Restaurante El Dorado</h3>
+    <p class="fucsia">“Un legado servido con el toque de mamá.”</p>
+    <p>© 2025 - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
